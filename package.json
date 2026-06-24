@@ -3,6 +3,12 @@
   "workspaces": [
     "apps/web"
   ],
+  "scripts": {
+    "build": "cd apps/web && next build"
+  },
+  "dependencies": {
+    "next": "^16.2.6"
+  },
   "resolutions": {
     "react": "19.1.0",
     "react-dom": "19.1.0"
