@@ -25,7 +25,7 @@ export default function BrandStory() {
   }, [animated]);
 
   return (
-    <section style={{ background: '#f5f0e8', padding: '140px 24px' }}>
+    <section style={{ background: '#f5f0e8', padding: 'clamp(60px, 12vw, 140px) clamp(16px, 4vw, 24px)' }}>
       <div
         style={{
           maxWidth: '1200px',

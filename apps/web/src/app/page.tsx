@@ -75,7 +75,7 @@ export default function LandingPage() {
       <section
         style={{
           background: '#0a0a06',
-          padding: '160px 32px',
+          padding: 'clamp(80px, 12vw, 160px) clamp(16px, 4vw, 32px)',
           textAlign: 'center',
           borderTop: '1px solid rgba(201,168,76,0.12)',
           position: 'relative',

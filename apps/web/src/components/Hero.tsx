@@ -95,11 +95,11 @@ export default function Hero({ onOrderClick }: HeroProps) {
           className="animate-fade-up"
           style={{
             fontFamily: lato,
-            fontSize: '0.58rem',
+            fontSize: 'clamp(0.5rem, 1.5vw, 0.58rem)',
             letterSpacing: '0.38em',
             textTransform: 'uppercase',
             color: '#c9a84c',
-            marginBottom: '32px',
+            marginBottom: 'clamp(16px, 4vw, 32px)',
             fontWeight: 400,
             animationDelay: '0.1s',
           }}
@@ -121,10 +121,9 @@ export default function Hero({ onOrderClick }: HeroProps) {
           <span
             style={{
               display: 'block',
-              fontSize: 'clamp(2rem, 6.5vw, 6rem)',
+              fontSize: 'clamp(1.6rem, 6.5vw, 6rem)',
               color: '#f5f0e8',
               marginBottom: '8px',
-              whiteSpace: 'nowrap',
             }}
           >
             The Power of Luban.
@@ -132,7 +131,7 @@ export default function Hero({ onOrderClick }: HeroProps) {
           <span
             style={{
               display: 'block',
-              fontSize: 'clamp(1.8rem, 4vw, 3.5rem)',
+              fontSize: 'clamp(1.1rem, 3.5vw, 3.5rem)',
               color: '#c9a84c',
               fontStyle: 'italic',
             }}
@@ -165,15 +164,15 @@ export default function Hero({ onOrderClick }: HeroProps) {
           className="animate-fade-up"
           style={{
             fontFamily: lato,
-            fontSize: '0.78rem',
+            fontSize: 'clamp(0.68rem, 2vw, 0.78rem)',
             letterSpacing: '0.14em',
             color: '#e8d5a3',
             fontWeight: 300,
-            marginBottom: '52px',
             maxWidth: '480px',
-            margin: '0 auto 52px auto',
+            margin: '0 auto clamp(32px, 6vw, 52px) auto',
             lineHeight: 1.7,
             animationDelay: '0.5s',
+            padding: '0 8px',
           }}
         >
           A premium Ayurvedic beauty ritual, rooted in heritage.
@@ -188,9 +187,9 @@ export default function Hero({ onOrderClick }: HeroProps) {
               border: '1px solid #c9a84c',
               color: '#c9a84c',
               background: 'transparent',
-              padding: '20px 56px',
+              padding: 'clamp(14px, 3vw, 20px) clamp(32px, 6vw, 56px)',
               fontFamily: lato,
-              fontSize: '0.65rem',
+              fontSize: 'clamp(0.55rem, 1.5vw, 0.65rem)',
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
               cursor: 'pointer',

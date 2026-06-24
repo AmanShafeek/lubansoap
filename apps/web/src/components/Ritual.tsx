@@ -34,7 +34,7 @@ export default function Ritual() {
   const lato = "var(--font-lato), 'Lato', system-ui, sans-serif";
 
   return (
-    <section style={{ background: '#f5f0e8', padding: '140px 24px', overflow: 'hidden' }}>
+    <section style={{ background: '#f5f0e8', padding: 'clamp(60px, 12vw, 140px) clamp(16px, 4vw, 24px)', overflow: 'hidden' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Heading */}
         <div className="animate-on-scroll" style={{ textAlign: 'center', marginBottom: '100px' }}>

@@ -31,7 +31,7 @@ export default function Testimonials() {
   const lato = "var(--font-lato), 'Lato', system-ui, sans-serif";
 
   return (
-    <section style={{ background: '#ede7da', padding: '140px 24px' }}>
+    <section style={{ background: '#ede7da', padding: 'clamp(60px, 12vw, 140px) clamp(16px, 4vw, 24px)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Heading */}
         <div className="animate-on-scroll" style={{ textAlign: 'center', marginBottom: '80px' }}>

@@ -32,7 +32,7 @@ export default function ProductShowcase({ onOrderClick }: ProductShowcaseProps) 
     <section
       style={{
         background: '#0a0a06',
-        padding: '140px 24px',
+        padding: 'clamp(60px, 12vw, 140px) clamp(16px, 4vw, 24px)',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',

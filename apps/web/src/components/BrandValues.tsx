@@ -28,7 +28,7 @@ export default function BrandValues() {
     <section
       style={{
         background: '#0e0e08',
-        padding: '140px 24px',
+        padding: 'clamp(60px, 12vw, 140px) clamp(16px, 4vw, 24px)',
         borderTop: '1px solid rgba(201,168,76,0.1)',
         borderBottom: '1px solid rgba(201,168,76,0.1)',
         position: 'relative',

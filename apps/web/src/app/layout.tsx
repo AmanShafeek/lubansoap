@@ -18,6 +18,7 @@ const lato = Lato({
 export const metadata = {
   title: "Legacy's Maquillage | Ancient Wisdom. Timeless Beauty.",
   description: 'Premium Luban Beauty Soap. Handcrafted Ayurvedic ritual with sacred Frankincense.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -292,3 +292,56 @@
 .luxury-scrollbar::-webkit-scrollbar { width: 2px; }
 .luxury-scrollbar::-webkit-scrollbar-track { background: rgba(201, 168, 76, 0.04); }
 .luxury-scrollbar::-webkit-scrollbar-thumb { background: rgba(201, 168, 76, 0.4); }
+
+/* ─────────────────────────────────────────────────────
+   MOBILE OPTIMIZATIONS
+───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Improve touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better button sizing on mobile */
+  .btn-gold-outline,
+  .btn-gold-filled {
+    padding: 16px 28px;
+    font-size: 0.62rem;
+    width: 100%;
+  }
+
+  /* Improve readability on small screens */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Disable hover effects on touch (prevent sticky hover) */
+  @media (hover: none) {
+    .shimmer-sweep::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-gold-outline,
+  .btn-gold-filled {
+    padding: 14px 20px;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Smooth scrolling with momentum on iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}
